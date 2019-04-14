@@ -7,7 +7,7 @@
             <div class="col-lg-6 col-md-8">
                 <div class="card bg-secondary shadow border-0">
                     <div class="card-header bg-transparent pb-5">
-                        <div class="text-muted text-center mt-2 mb-4"><small><?php echo e(__('Sign up with')); ?></small></div>
+                        <div class="text-muted text-center mt-2 mb-4"><small><?php echo e(__('Zaloguj za pomocą konta')); ?></small></div>
                         <div class="text-center">
                             <a href="#" class="btn btn-neutral btn-icon mr-4">
                                 <span class="btn-inner--icon"><img src="<?php echo e(asset('argon')); ?>/img/icons/common/github.svg"></span>
@@ -21,7 +21,7 @@
                     </div>
                     <div class="card-body px-lg-5 py-lg-5">
                         <div class="text-center text-muted mb-4">
-                            <small><?php echo e(__('Or sign up with credentials')); ?></small>
+                            <small><?php echo e(__('lub stwórz nowe konto')); ?></small>
                         </div>
                         <form role="form" method="POST" action="<?php echo e(route('register')); ?>">
                             <?php echo csrf_field(); ?>
@@ -31,7 +31,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                                     </div>
-                                    <input class="form-control<?php echo e($errors->has('name') ? ' is-invalid' : ''); ?>" placeholder="<?php echo e(__('Name')); ?>" type="text" name="name" value="<?php echo e(old('name')); ?>" required autofocus>
+                                    <input class="form-control<?php echo e($errors->has('name') ? ' is-invalid' : ''); ?>" placeholder="<?php echo e(__('Imię')); ?>" type="text" name="name" value="<?php echo e(old('name')); ?>" required autofocus>
                                 </div>
                                 <?php if($errors->has('name')): ?>
                                     <span class="invalid-feedback" style="display: block;" role="alert">
@@ -57,7 +57,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                                     </div>
-                                    <input class="form-control<?php echo e($errors->has('password') ? ' is-invalid' : ''); ?>" placeholder="<?php echo e(__('Password')); ?>" type="password" name="password" required>
+                                    <input class="form-control<?php echo e($errors->has('password') ? ' is-invalid' : ''); ?>" placeholder="<?php echo e(__('Hasło')); ?>" type="password" name="password" required>
                                 </div>
                                 <?php if($errors->has('password')): ?>
                                     <span class="invalid-feedback" style="display: block;" role="alert">
@@ -70,24 +70,24 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                                     </div>
-                                    <input class="form-control" placeholder="<?php echo e(__('Confirm Password')); ?>" type="password" name="password_confirmation" required>
+                                    <input class="form-control" placeholder="<?php echo e(__('Powtórz hasło')); ?>" type="password" name="password_confirmation" required>
                                 </div>
                             </div>
                             <div class="text-muted font-italic">
-                                <small><?php echo e(__('password strength')); ?>: <span class="text-success font-weight-700"><?php echo e(__('strong')); ?>strong</span></small>
+                                <small><?php echo e(__('siła hasła')); ?>: <span class="text-success font-weight-700"><?php echo e(__('silne')); ?></span></small>
                             </div>
                             <div class="row my-4">
                                 <div class="col-12">
                                     <div class="custom-control custom-control-alternative custom-checkbox">
                                         <input class="custom-control-input" id="customCheckRegister" type="checkbox">
                                         <label class="custom-control-label" for="customCheckRegister">
-                                            <span class="text-muted"><?php echo e(__('I agree with the')); ?> <a href="#!"><?php echo e(__('Privacy Policy')); ?></a></span>
+                                            <span class="text-muted"><?php echo e(__('Akceptuję')); ?> <a href="#!"><?php echo e(__('Politykę Prywatności')); ?></a></span>
                                         </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary mt-4"><?php echo e(__('Create account')); ?></button>
+                                <button type="submit" class="btn btn-primary mt-4"><?php echo e(__('Stwórz konto')); ?></button>
                             </div>
                         </form>
                     </div>

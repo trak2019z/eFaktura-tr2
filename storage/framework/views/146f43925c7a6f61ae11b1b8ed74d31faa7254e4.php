@@ -34,19 +34,19 @@
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="<?php echo e(route('register')); ?>">
                         <i class="ni ni-circle-08"></i>
-                        <span class="nav-link-inner--text"><?php echo e(__('Register')); ?></span>
+                        <span class="nav-link-inner--text"><?php echo e(__('Zarejestruj')); ?></span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="<?php echo e(route('login')); ?>">
                         <i class="ni ni-key-25"></i>
-                        <span class="nav-link-inner--text"><?php echo e(__('Login')); ?></span>
+                        <span class="nav-link-inner--text"><?php echo e(__('Zaloguj')); ?></span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="<?php echo e(route('profile.edit')); ?>">
                         <i class="ni ni-single-02"></i>
-                        <span class="nav-link-inner--text"><?php echo e(__('Profile')); ?></span>
+                        <span class="nav-link-inner--text"><?php echo e(__('Profil')); ?></span>
                     </a>
                 </li>
             </ul>
