@@ -9,7 +9,7 @@
                 <div class="card bg-secondary shadow border-0">
                     <div class="card-body px-lg-5 py-lg-5">
                         <div class="text-center text-muted mb-4">
-                            <small>{{ __('Reset Password') }}</small>
+                            <small>{{ __('Nie pamiętam hasła') }}</small>
                         </div>
                         <form role="form" method="POST" action="{{ route('password.update') }}">
                             @csrf
