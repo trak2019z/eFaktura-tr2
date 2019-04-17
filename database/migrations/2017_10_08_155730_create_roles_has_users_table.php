@@ -13,8 +13,8 @@ class CreateRolesHasUsersTable extends Migration
      */
     public function up()
     {
-		Schema::create('roles_has_users', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('roles_has_users', function (Blueprint $table) {
+            $table->increments('id');
             $table->integer('users_id')->unsigned();
             $table->integer('roles_id')->unsigned();
             $table->timestamps();
@@ -30,7 +30,8 @@ class CreateRolesHasUsersTable extends Migration
             $table->foreign('roles_id')
                 ->references('id')
                 ->on('roles')->onDelete('cascade');
-        });		
+        });
+
     }
 
     /**

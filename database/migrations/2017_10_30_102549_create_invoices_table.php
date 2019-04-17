@@ -14,19 +14,21 @@ class CreateInvoicesTable extends Migration
     public function up()
     {
         Schema::create('invoices', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->integer('client_id')->unsigned()->nullable();
-            $table->string('NIP')->nullable();
-            $table->string('company');
-            $table->string('first_name');
-            $table->string('last_name');
+            $table->increments('id');
+            $table->string('category');
+            $table->string('NIP')->nullable();;
+            $table->string('company')->nullable();;
+            $table->string('firstName');
+            $table->string('lastName');
             $table->string('street')->nullable();
             $table->string('town');
             $table->string('postcode');
+            $table->string('postcode_town');
             $table->string('property_number');
             $table->string('number');
             $table->string('payment_form');
             $table->integer('status');
+            $table->integer('client_id')->unsigned()->nullable();
             $table->string('product');
             $table->string('order');
             $table->double('price');
@@ -46,3 +48,5 @@ class CreateInvoicesTable extends Migration
         Schema::dropIfExists('invoices');
     }
 }
+
+
